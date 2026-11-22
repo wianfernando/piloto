@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Site</title>
+</head>
+<body>
+
+    <nav>
+        <a href="{% url 'index' %}">Home</a> |
+        <a href="{% url 'sobre' %}">Sobre</a> |
+        <a href="{% url 'contato' %}">Contato</a> |
+        <a href="{% url 'ajuda' %}">Ajuda</a>
+    </nav>
+
+    {% block conteudo %}
+    {% endblock %}
+
+</body>
+</html>
